@@ -1,18 +1,4 @@
-html {
-    box-sizing: border-box;
-}
-* {
-    text-decoration: none
-}
-* ::after,
-* ::before {
-    box-sizing: inherit;
-}
 
-/*:root {
-    
-    --secondary-bg-color: #e5e5e5;    
-} */
 :root {
     --accent-color: #2196F3;
     --logo-Studio-color: black;
@@ -22,6 +8,25 @@ html {
     --title-text-color: #757575;
     --contacts-footer-color: rgba(255, 255, 255, 0.6);
     --team-bg-color: #f5f4fa;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* убираем подчеркивание ссылок */
+* {
+    text-decoration: none
+}
+
+* ::after,
+* ::before {
+    box-sizing: inherit;
+}
+
+/* убираем точки списков */
+.list {
+    list-style: none;
 }
 
 ul,
@@ -40,26 +45,75 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+/*-----------Main ------------*/
 
-/*--------------Head--------------*/
-.top_lime {
-    background: var(--primary-white-color);
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.top_logoWeb {
-    font-family: "Raleway";
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid red; */
+}
+/*--------------Head--------------*/
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.logo-WebStudio.top,
+.logo-WebStudio.footer {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-color);
-    
 }
 
-.top_logoStudio {
-    font-family: "Raleway";
-    font-size: 26px;
-    line-height: 1.19;
+.Studio-footer {
+    color: var(--primary-white-color);
+}
+
+.Studio-header {
     color: var(--logo-Studio-color);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .button_top {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
 }
 
 .button_top:hover,
@@ -67,30 +121,24 @@ body {
     color: var(--accent-color);
 }
 
-
-.button_top {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-}
-
-.contact_header {
+.contact,
+.contact-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     list-style: none;
+    font-style: normal;
 }
 
-.contact {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--contacts-footer-color);
-    list-style: none;
-    font-style: normal;
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth+.auth {
+    margin-left: 50px;
 }
 
 .contactadress {
@@ -105,7 +153,6 @@ body {
 .contact_header:hover {
     color: var(--accent-color);
 }
-
 /*--------------Body--------------*/
 .big_banner,
 .info_box {
@@ -223,6 +270,7 @@ body {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     margin-top: 94px;
+    display: flex;
 }
 .nav_btn {
     border-radius: 4px;
@@ -233,6 +281,7 @@ body {
     text-align: center;
     border-radius: 4px solid var(--team-bg-color);
 }
+
 .nav_btn:hover,
 .nav_btn:focus {
     color: var(--primary-white-color);
@@ -281,3 +330,4 @@ body {
 Разберись где. Прошлая я сделала тебе что могла.
 Фотографии сделала отступ от самого фото, а не от 
 карточки.*/
+
