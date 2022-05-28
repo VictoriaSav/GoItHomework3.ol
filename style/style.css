@@ -1,21 +1,17 @@
+html {
+    box-sizing: border-box;
+}
 * {
     text-decoration: none
 }
-
-/* цвет основного текста #212121 */
-/* вторичный цвет текста #757575 */
-/* акцент #2196F3 */
-/* белый #FFFFFF */
-/* вторичный цвет фона #E5E5E5 *
-/* фон наша команда #f5f4fa */
-/* цвет фона в футере #2F303A */
-/* цвет контактов в футере rgba(255, 255, 255, 0.6) */
+* ::after,
+* ::before {
+    box-sizing: inherit;
+}
 
 /*:root {
     
-    --secondary-bg-color: #e5e5e5;
-    --team-bg-color: #f5f4fa;
-    
+    --secondary-bg-color: #e5e5e5;    
 } */
 :root {
     --accent-color: #2196F3;
@@ -39,6 +35,10 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     background-color: var(--primary-white-color);
+    margin: 0 auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*--------------Head--------------*/
@@ -52,6 +52,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-color);
+    
 }
 
 .top_logoStudio {
@@ -126,6 +127,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
 
 .big_banner_btn {
@@ -138,22 +142,33 @@ body {
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 4px solid transparent;
 }
 
 /*--------------About Us--------------*/
-
+.about_us {
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
 .about_us_h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.4;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
+    
 }
 
 .about_usParagr {
     font-size: 14px;
     line-height: 1.7;
     color: var(--title-text-color);
+    
 }
 
 /*--------------What we do--------------*/
@@ -164,11 +179,16 @@ body {
     line-height: 1.16;
     text-align: center;
     color: var(--primary-text-color);
+    margin-bottom: 50px;
 }
-
+.what_we_do {
+    margin-bottom: 94px;
+}
 /*--------------Our team--------------*/
 .our_team {
     background-color: var(--team-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /*кусочек в what we do h2*/
@@ -186,6 +206,11 @@ body {
     text-align: center;
     color: var(--title-text-color);
 }
+/*--------------Footer--------------*/
+.info_box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 /*--------------Portfolio Button--------------*/
 
@@ -196,8 +221,18 @@ body {
     text-align: center;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 94px;
 }
-
+.nav_btn {
+    border-radius: 4px;
+    padding: 6px 22px;
+    display: inline-block;
+    background-color: var(--team-bg-color);
+    min-width: 73px;
+    text-align: center;
+    border-radius: 4px solid var(--team-bg-color);
+}
 .nav_btn:hover,
 .nav_btn:focus {
     color: var(--primary-white-color);
@@ -221,3 +256,28 @@ body {
     line-height: 1.87;
     color: var(--title-text-color);
 }
+
+.main_portfolio {
+   width: 1230px; 
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+.portfolio_content {
+    width: 370px;
+    height: 294px;
+    margin-bottom: 140px;
+}
+
+
+
+/*Доброе утро. Надо сделать рамку в портфолио.
+Разберись где. Прошлая я сделала тебе что могла.
+Фотографии сделала отступ от самого фото, а не от 
+карточки.*/
