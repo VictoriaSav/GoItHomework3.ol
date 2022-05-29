@@ -182,7 +182,7 @@ body {
 }
 
 .big_banner {
-    
+    width: 1600px;
     height: 600px;
     left: 0px;
     top: 80px;
@@ -300,6 +300,8 @@ body {
 }
 /*--------------Footer--------------*/
 .info_box {
+    width: 1600px;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
