@@ -41,12 +41,19 @@ body {
     letter-spacing: 0.03em;
     background-color: var(--primary-white-color);
     margin: 0 auto;
-    width: 1230px;
+    width: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-
-
+/*-----------Main ------------*/
+.container {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid red; */
+}
 
 
 .section {
@@ -60,17 +67,9 @@ body {
 .section:not(first-child) {
     padding-top: 0;
 }
-/*-----------Main ------------*/
 
 
-.container {
-    width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid red; */
-}
+
 /*--------------Head--------------*/
 .header {
     border-bottom: 1px solid #ececec;
@@ -186,6 +185,7 @@ body {
     height: 600px;
     left: 0px;
     top: 80px;
+    flex: auto;
 }
 
 .hero {
