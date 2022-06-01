@@ -29,10 +29,10 @@ html {
     list-style: none;
 }
 
-ul,
-ul .button_top.current {
+ul {
     list-style: none;
-    color: var(--accent-color);
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -40,14 +40,27 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     background-color: var(--primary-white-color);
-    margin: 0 auto;
-    width: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*-----------Main ------------*/
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -56,16 +69,9 @@ body {
 }
 
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-} 
 
 .section.our_team {
     padding-bottom: 0;
-}
-.section:not(first-child) {
-    padding-top: 0;
 }
 
 
@@ -73,12 +79,18 @@ body {
 /*--------------Head--------------*/
 .header {
     border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 
 .nav-flex {
     display: flex;
     align-items: center;
+}
+
+.logo-WebStudio.top {
+    margin-right: 93px;
 }
 
 .logo-WebStudio.top,
@@ -91,10 +103,22 @@ body {
 }
 
 .logo-WebStudio.footer {
+    margin-left: 215px;
+    margin-top: 60px;
     margin-bottom: 20px;
+    display: block;
 }
 .Studio-footer {
     color: var(--primary-white-color);
+}
+
+.footer-item {
+    margin-bottom: 9px;
+    margin-left: 215px;
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
 }
 
 .Studio-header {
@@ -110,6 +134,8 @@ body {
 .site-nav {
     display: flex;
     margin-left: 93px;
+    margin: 0;
+    padding: 0;
 }
 
 .item:not(:last-child) {
@@ -134,15 +160,23 @@ body {
     color: var(--accent-color);
 }
 
+.contact {
+    font-weight: normal;
+}
 .contact,
 .contact-nav {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     list-style: none;
     font-style: normal;
+}
+
+.contact-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact:not(:last-child) {
@@ -156,6 +190,8 @@ body {
 .auth-nav {
     display: flex;
     margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .auth+.auth {
@@ -168,6 +204,7 @@ body {
     color: var(--primary-white-color);
     list-style: none;
     font-style: normal;
+    
 }
 
 .contact:hover,
@@ -175,21 +212,19 @@ body {
     color: var(--accent-color);
 }
 /*--------------Body--------------*/
-.big_banner,
-.info_box {
-    background-color: var(--footer-bg-color);
-}
 
-.big_banner {
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    flex: auto;
-}
 
 .hero {
     text-align: center;
+    background-color: var(--footer-bg-color);
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    left: 0px;
+    top: 80px;
+    flex: auto;   
+    margin: 0 auto;
 }
 
 .big_banner_text {
@@ -199,30 +234,56 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    margin-top: 0px;
-    margin-bottom: 30px;
-    padding-top: 200px;
+    width: 696px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .big_banner_btn {
-    border: 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.85;
-    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
     min-width: 200px;
+    min-height: 50px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
 }
 
+.big_banner_btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 /*--------------About Us--------------*/
+.header-h2 {
+    visibility: hidden;
+    margin: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0;
+    position: absolute;
+}
 
 .about_us {
     display: flex;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.about_us_li {
+    padding-right: 30px;
+
 }
 
 .about_us_li + .about_us_li {
@@ -258,12 +319,11 @@ body {
     color: var(--primary-text-color);
     margin-bottom: 50px;
 }
-.what_we_do {
-    margin-bottom: 94px;
-}
+
 
 .img_whatwedo {
     display: flex;
+    padding-bottom: 94px;
 }
 
 .what_we_do_img + .what_we_do_img {
@@ -273,16 +333,26 @@ body {
 .our_team {
     background-color: var(--team-bg-color);
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .our_team-card {
     display: flex;
+    padding-bottom: 94px;
+    padding-left: 215px;
+    padding-right: 215px;
+    }
+
+.card-team_all {
+    background-color: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
 }
 
-.card-team_all + .card-team_all {
-    margin-left: 30px;
+.card-team_all:last-child {
+    margin-right: 0;
 }
+
 /*кусочек в what we do h2*/
 .our_team_name {
     font-weight: 500;
@@ -290,6 +360,8 @@ body {
     line-height: 1.18;
     text-align: center;
     color: var(--primary-text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .our_team_position {
@@ -297,18 +369,18 @@ body {
     line-height: 19px;
     text-align: center;
     color: var(--title-text-color);
+    margin-bottom: 30px;
 }
 /*--------------Footer--------------*/
 .info_box {
-    width: 1600px;
-    align-items: center;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;  
+    background-color: var(--footer-bg-color);
 }
  
 /*--------------Portfolio Button--------------*/
-.nav-portfolio {
-
+.nav_portfolio {
+    display: none;
 }
 
 .btn_portfolio {
@@ -317,24 +389,40 @@ body {
     line-height: 1.62;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    margin-top: 94px;
+    margin-bottom: 56px;
     display: flex;
-    margin-left: 25%;
+    border-radius: 4px;
+    justify-content: center;
+    margin-top: 94px;
 }
-.nav_btn {
+
+.filter-item {
     margin-right: 8px;
-    border-radius: 4px;
-    padding: 6px 22px;
-    display: inline-block;
-    background-color: var(--team-bg-color);
-
-    min-width: 73px;
-    border-radius: 4px;
-    border: 0;
-    min-width: auto;
 }
 
+.filter-item:last-child {
+    margin-right: 0;
+}
+
+.nav_btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background-color: var(--team-bg-color);
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.nav-btn:active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
  
 .nav_btn + .nav_btn {
     margin-right: 0;
@@ -351,6 +439,14 @@ body {
 .our-projects {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 94px;
+}
+
+.border-item {
+    background-color: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding-top: 20px;
 }
 
 .portfolio_item {
@@ -367,13 +463,19 @@ margin-bottom: 30px;
     margin-bottom: 0;
 }
 
+
+
 .portfolio_name {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 2;
+    line-height: 2.0;
+
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 4px;
 }
 
 .portfolio_type {
@@ -381,15 +483,12 @@ margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--title-text-color);
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
 }
 
-.main_portfolio {
-   width: 1230px; 
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
-}
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
