@@ -463,7 +463,6 @@ img {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .portfolio_content {
   width: 370px;
