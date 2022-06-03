@@ -67,12 +67,13 @@ img {
   /* outline: 2px solid red; */
 }
 
-.section.our_team {
-  padding-bottom: 0;
+.section.team {
+  background-color: var(--team-bg-color);
 }
 
 .section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /*--------------Head--------------*/
@@ -216,13 +217,8 @@ img {
 .hero {
   text-align: center;
   background-color: var(--footer-bg-color);
-  width: 1600px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  left: 0px;
-  top: 80px;
-  flex: auto;
   margin: 0 auto;
 }
 
@@ -235,7 +231,7 @@ img {
   color: var(--primary-white-color);
   width: 696px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .big_banner_btn {
@@ -265,7 +261,7 @@ img {
   border-radius: 4px;
 }
 /*--------------About Us--------------*/
-.header-h2 {
+.header-name {
   visibility: hidden;
   margin: 0;
   bottom: 0;
@@ -276,14 +272,13 @@ img {
 
 .about_us {
   display: flex;
-  padding-top: 94px;
 }
 
 .about_us_li + .about_us_li {
   margin-left: 30px;
 }
 
-.about_us_h3 {
+.about_us_text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
@@ -296,21 +291,18 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: var(--title-text-color);
+  width: 270px;
 }
 
 /*--------------What we do--------------*/
-.what_we_do_h2,
-.our_team_h2 {
+.what_we_do_name,
+.our_team_own {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 50px;
-}
-
-.our_team_h2 {
-  padding-top: 94px;
 }
 
 .img_whatwedo {
@@ -321,10 +313,6 @@ img {
   margin-left: 30px;
 }
 /*--------------Our team--------------*/
-.our_team.container {
-  background-color: var(--team-bg-color);
-  padding-bottom: 94px;
-}
 
 .our_team-card {
   display: flex;
@@ -343,10 +331,8 @@ img {
 }
 
 .info-card {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 60px;
-  margin-right: 59px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*кусочек в what we do h2*/
@@ -364,15 +350,12 @@ img {
   line-height: 19px;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 30px;
 }
 /*--------------Footer--------------*/
 .info_box {
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
-  margin: 0 auto;
 }
 
 /*--------------Portfolio Button--------------*/
@@ -386,11 +369,10 @@ img {
   line-height: 1.62;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
   display: flex;
   border-radius: 4px;
   justify-content: center;
-  margin-top: 94px;
 }
 
 .filter-item {
@@ -468,6 +450,7 @@ img {
 
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .portfolio_type {
